@@ -5,11 +5,11 @@ body {
     /* display: flex;
     flex-direction: column;
     align-items: center; */
-    background-color: rgb(236, 236, 255);
+    background-color: #ececff;
 }
 h1 {
     text-align: center;
-    color:  rgb(98, 98, 150);
+    color:  #626296;
 }
 
 .grid {
@@ -48,9 +48,11 @@ h1 {
 .grid-body span {
     font-weight: bold;
     font-size: .75rem;
-    letter-spacing: .1em;
-    color: rgb(157, 157, 231);
+    letter-spacing: .2em;
+    color:#1A1A6B;
 }
+
+
 .grid-link {
     grid-area: link;
     justify-self: start;
