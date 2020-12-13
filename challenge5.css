@@ -4,7 +4,7 @@ html, body {
     padding: 0;
 }
 body {
-    padding: 0;
+    padding: 2em;
     background: #5801CB;
     color: white;
     font-family: 'Nunito';
@@ -51,20 +51,20 @@ p {
 
 
 h1 {
-    font-size: 2rem;
-    text-align: center;
+    font-size: 3rem;
 }
 
 .form-container {
-    
+    background: #7113ec;
 }
 
 label {
-   }
+    font-weight: bold;
+}
 
 input[type=submit] {
     background-color: yellow;
-    color: rgb(90, 90, 90);
+    color: #5801CB;
     font-weight: bold;
     font-size: 1rem;
     text-transform: uppercase;
@@ -73,4 +73,5 @@ input[type=submit] {
 
 p {
     font-size: .75rem;
+    color: rgb(228, 228, 228);
 }
