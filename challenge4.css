@@ -124,6 +124,5 @@ input[type=text]:focus, textarea:focus {
 }
 
 input[type=submit] {
-    background: #9D9D9D;
-    color: #FF01FF ;
-
+    background: #FF01FF ;
+  
