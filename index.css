@@ -1,6 +1,6 @@
 body {
     margin: 0 auto;
-    padding: 2em;
+    padding: 3em;
     font-family: 'Open Sans', sans-serif;
     /* display: flex;
     flex-direction: column;
@@ -10,7 +10,7 @@ body {
 }
 h1 {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 3rem;
     text-transform: uppercase;
     letter-spacing: .1em;
     color:   #B6EAFF;
@@ -27,7 +27,7 @@ h1 {
     "image link";
     grid-gap: 0 1.5em;
     padding: 1.5em;
-    background-color: #2C3031;
+    background-color: #3f4344;
     margin-bottom: 2em;
 }
 .grid-title {
@@ -35,6 +35,7 @@ h1 {
     margin: 0;
     color:  #B6EAFF;
     font-size: 1.75rem;
+    font-weight: 400;
 }
 .grid-image{
     grid-area: image;
@@ -79,6 +80,7 @@ h1 {
     color:#2C3031;
     transform: scale(1);
     transition: transform 500ms;
+    height: 1.5em;
 }
 .grid-link:hover,
 .grid-link:focus {
@@ -87,7 +89,7 @@ h1 {
 }
 
 @media (min-width: 800px) {
-    .container {
+    .gid-wrapper {
         display: grid;
         grid-template-columns: repeat(2, auto);
         gap: 2em;
@@ -122,7 +124,7 @@ h1 {
 }
 
 @media (min-width: 1200px) {
-    .container {
+    .grid-wrapper {
         display: grid;
         grid-template-columns: repeat(3, auto);
         gap: 1em;
