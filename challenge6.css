@@ -60,30 +60,35 @@ body {
     justify-content: center;
     align-items: center;
 }
-body > div {
-    width: 70%;
+.container {
+  /* border: 1px solid green; */
+  text-align: center;
 }
-.card {
-    max-width: 400px;
+.card{
+    max-width: 350px;
 }
 svg {
     width: 8em;
 }
-
 h1 {
     font-size: 3rem;
     font-weight: bold;
     color:#309D67;
 }
 .card p {
-    font-size: auto;
-    line-height: auto;
+    font-size: 1rem;
+    line-height: 1.6em;
     color: auto;
 }
-
 a {
-    background: auto;
-    padding: auto;
-    margin-top: auto;
+    background-color:#43bd80;
+    color: white;
+    text-transform: uppercase;
+    padding: 1em 2.5em;
+    margin-top: 1.5em;
+}
+a:hover,
+a:focus {
+    background-color:#309D67;
 }
 
