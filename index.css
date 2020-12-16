@@ -89,7 +89,7 @@ h1 {
 }
 
 @media (min-width: 800px) {
-    .gid-wrapper {
+    .grid-wrapper {
         display: grid;
         grid-template-columns: repeat(2, auto);
         gap: 2em;
