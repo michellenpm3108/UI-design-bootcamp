@@ -10,6 +10,17 @@ html, body {
 .container {
     padding: 3em;
 }
+.container::before {
+    background: rgba(238, 238, 211, 0.395);
+    content: '';
+    width: 20vw;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+
+}
 h1 {
 
 }
@@ -19,12 +30,12 @@ span {
     padding: .1em .4em;
     font-size: .75rem;
 }
-span::before {
+
+span::after{
     position: absolute;
-    content:'1:30';
-    z-index: -1;
-    color: rgba(224, 224, 224, 0.32);
-    font-size: 15rem;
-    left: 20%;
-    top: 6%;
+    content:'1.30';
+    font-size: 10rem;
+    color:rgba(238, 238, 211, 0.395);
+    top: .5em;
+    left: 1.25em;
 }
