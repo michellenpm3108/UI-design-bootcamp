@@ -10,8 +10,8 @@ html, body {
 .container {
     padding: 3em;
 }
-.container::before {
-    background: rgba(238, 238, 211, 0.395);
+/* .container::before {
+    background: rgb(68, 76, 64);
     content: '';
     width: 20vw;
     height: 100vh;
@@ -20,12 +20,12 @@ html, body {
     top: 0;
     left: 0;
 
-}
+} */
 h1 {
-
+    color: rgb(149, 231, 114);
 }
 span {
-    background-color: rgb(238, 238, 211);
+    background-color: rgb(68, 76, 64);
     border-radius: .7em;
     padding: .1em .4em;
     font-size: .75rem;
@@ -35,7 +35,8 @@ span::after{
     position: absolute;
     content:'1.30';
     font-size: 10rem;
-    color:rgba(238, 238, 211, 0.395);
+    color:rgba(149, 231, 114, 0.51);
     top: .5em;
     left: 1.25em;
+    z-index: -1;
 }
