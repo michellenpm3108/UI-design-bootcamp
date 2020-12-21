@@ -39,6 +39,7 @@ span {
     border-radius: .7em;
     padding: .1em .4em;
     font-size: .75rem;
+    color: white;
 }
 
 span::after{
@@ -47,11 +48,12 @@ span::after{
     font-size: 10rem;
     color:rgba(149, 231, 114, 0.51);
     top: .5em;
-    left: 1.25em;
+    left: 30vw;
     z-index: -1;
 }
 
 .container p {
     border-left: .5em solid rgb(92, 142, 71);
-    padding-left: 1em;
+    padding-left: 3em;
+    max-width: 500px;
 }
