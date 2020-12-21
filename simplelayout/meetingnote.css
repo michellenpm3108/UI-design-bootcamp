@@ -10,6 +10,16 @@ html, body {
 .container {
     padding: 3em;
 }
+.container::before {
+    content:'';
+    width: 20vw;
+    height: 100vh;
+    background:rgba(149, 231, 114, 0.51);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index:-1;
+}
 /* .container::before {
     background: rgb(68, 76, 64);
     content: '';
@@ -22,7 +32,7 @@ html, body {
 
 } */
 h1 {
-    color: rgb(149, 231, 114);
+    color: rgb(92, 142, 71);
 }
 span {
     background-color: rgb(68, 76, 64);
