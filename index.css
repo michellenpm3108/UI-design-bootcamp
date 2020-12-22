@@ -21,11 +21,11 @@ h1 {
     display: grid;
     grid-template-columns: minmax(200px, 1fr) 2fr;
     grid-template-areas: 
-    "image title"
+    "title title"
     "image info"
     "image body"
     "image link";
-    grid-gap: 0 1.5em;
+    grid-gap: .5em 1em;
     padding: 1.5em;
     background-color: #3f4344;
     margin-bottom: 2em;
