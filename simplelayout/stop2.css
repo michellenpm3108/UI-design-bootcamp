@@ -1,1 +1,47 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../images/redlight.jpg);
+    background-size: cover;
+    background-position: 19em -5em;
+    font-family: 'Montserrat', sans-serif;
+}
+.container {
+    background: rgb(255, 255, 255);
+    height: 100vh;
+    width: 60%;
+    display: grid;
+    align-items: center;
+    padding-left: 4em;
+}
+h1{
+    font-size: 5rem;
+    line-height: 1em;
+    margin-bottom: 0;
+    z-index: 0;
+    position: relative;
+}
+h1::before{
+    content: '';
+    position: absolute; 
+    height: .25em; 
+    width: 40%;
+    bottom: 0;
+    left: -20%;
+    background: #FF0077;
+    z-index: -1;
+}
+h1::after {
+    content:'';
+    width: 2em;
+    height: 2em;
+    border-radius: 2em;
+    border: white .2em solid;
+    position: absolute;
+    right: -30%;
+    z-index: -1;
+}
+p{
+    font-size: 1.5rem;
+}
