@@ -72,11 +72,24 @@ img {
 }
 
 .testimonials {
-    margin-top: 3em;
+    width: 80%;
+    margin: 3em auto;
 }
 .testimonials li {
     background: white;
     padding: 2em;
     margin-bottom: 1em;
     text-align: center;
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.218);
+}
+blockquote, blockquote p {
+    margin: 0;
+}
+footer {
+    font-weight: bold;
+    font-size: .8rem;
+}
+blockquote p {
+    line-height: 1.5em;
+    margin-bottom: 1em;
 }
