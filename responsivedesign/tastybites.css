@@ -15,7 +15,44 @@ img {
 ul {
    list-style: none;
    padding: 0;
+   margin: 0;
 }
 a {
     text-decoration: none;
+}
+/* ----HEADER ---- */
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: orange;
+}
+nav ul {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    background: rgb(191, 184, 184);
+    padding: .2em 1em;
+    border-radius: .8em;
+}
+
+nav a {
+    color: white;
+}
+
+/* ----HERO CONTENT ----- */
+.hero-left {
+    text-align: center;
+}
+.cta-btn {
+    background: orange;
+    color: white;
+    font-size: .8rem;
+    font-weight: bold;
+    padding: .5em 1.5em;
+    border-radius: 2em;
+    margin: 1em;
+    display: inline-block;
 }
