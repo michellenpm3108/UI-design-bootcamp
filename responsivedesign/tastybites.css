@@ -63,3 +63,20 @@ h1 {
     margin: 1em auto 3em;
     display: inline-block;
 }
+
+/* ----TESTIMONIALS ----- */
+
+img {
+    position: absolute;
+    z-index: -1;
+}
+
+.testimonials {
+    margin-top: 3em;
+}
+.testimonials li {
+    background: white;
+    padding: 2em;
+    margin-bottom: 1em;
+    text-align: center;
+}
