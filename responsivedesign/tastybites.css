@@ -159,3 +159,21 @@ blockquote p {
         margin-right: 0;
     }
 }
+
+
+/* For the width display, ignore this */
+
+.width-container {
+    display: none;
+}
+
+.display-width {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #E6E6E6;
+    padding: .3em;
+    font-size: .85em;
+    color: black;
+}
