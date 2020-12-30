@@ -77,7 +77,7 @@ img {
     z-index: -1; 
 }
 
-.testimonials {
+ul.testimonials {
     width: 80%;
     margin: 2em auto;
 }
@@ -130,21 +130,32 @@ blockquote p {
     .wrapper {
         padding: 2em;
     }
-    body {
-        display: grid;
-        grid-template-areas: 
-        "header header"
-        "hero-left testimonials";
-        grid-column: 2fr 1fr;
-    }
-    header {
-        grid-area: header;
-    }
     .hero-left {
-        grid-area: hero-left;
+        text-align: left;
+        width: 30%;
+        margin-left: 3em;
     }
-    .testimonials {
-        grid-area: testimonials;
-        border: 1px solid red;
+    .hero-left h1{
+        font-size: 3rem;
+        margin: 0;
+    }
+    .cta-btn {
+        margin-bottom: 2em;
+    }
+    img {
+        width: 50%;
+        right: 0;
+        top: -9em;
+    }
+    ul.testimonials{
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
+    }
+    ul.testimonials li{
+        margin-right: 1em;
+    }
+    ul.testimonials li:nth-of-type(3){
+        margin-right: 0;
     }
 }
