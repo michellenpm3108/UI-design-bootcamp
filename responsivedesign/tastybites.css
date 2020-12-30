@@ -17,6 +17,8 @@ html, body {
 }
 img {
     width: 100%;
+    min-height: 100vh;
+    object-fit: cover;
 }
 ul {
    list-style: none;
@@ -39,9 +41,7 @@ nav ul {
     display: flex;
 }
 nav li {
-    background: rgb(154, 215, 243);
     padding: .2em 1em;
-    border-radius: .8em;
     margin-right: 1em;
 }
 nav a {
@@ -52,8 +52,8 @@ nav a {
 /* ----HERO CONTENT ----- */
 .hero-left {
     text-align: center;
-    width: 80%;
     margin: auto;
+
 }
 h1 {
     font-weight: bolder;
@@ -79,10 +79,10 @@ img {
 
 .testimonials {
     width: 80%;
-    margin: 3em auto;
+    margin: 2em auto;
 }
 .testimonials li {
-    background: white;
+    background: rgba(255, 255, 255, 0.939);
     padding: 2em;
     margin-bottom: 1em;
     text-align: center;
@@ -100,10 +100,11 @@ blockquote p {
     margin-bottom: 1em;
 }
 
-@media (min-width: 390px) {
+@media (min-width: 300px) {
     header {
         display: flex;
         justify-content: space-between;
+        align-items: baseline;
     }
     nav ul li:nth-last-child(1){
         margin-right: 0;
@@ -121,5 +122,29 @@ blockquote p {
     }
     ul.testimonials li:nth-of-type(3) {
         grid-column: 1/-1;
+    }
+  
+}
+
+@media (min-width: 1000px) {
+    .wrapper {
+        padding: 2em;
+    }
+    body {
+        display: grid;
+        grid-template-areas: 
+        "header header"
+        "hero-left testimonials";
+        grid-column: 2fr 1fr;
+    }
+    header {
+        grid-area: header;
+    }
+    .hero-left {
+        grid-area: hero-left;
+    }
+    .testimonials {
+        grid-area: testimonials;
+        border: 1px solid red;
     }
 }
