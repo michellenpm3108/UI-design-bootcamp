@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap');
+/* color: 
+blue rgb(154, 215, 243)
+yellow rgb(254, 218, 0)
+orange (238, 123, 4)
+ */
+
 
 html, body {
     margin: 0;
@@ -24,7 +30,7 @@ a {
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
-    color: orange;
+    color: rgb(238, 123, 4);
     margin-bottom: .5em;
     display: inline-block;
 }
@@ -33,7 +39,7 @@ nav ul {
     display: flex;
 }
 nav li {
-    background: rgb(191, 184, 184);
+    background: rgb(154, 215, 243);
     padding: .2em 1em;
     border-radius: .8em;
     margin-right: 1em;
@@ -54,7 +60,7 @@ h1 {
     margin: 1.5em auto 0;
 }
 .cta-btn {
-    background: orange;
+    background: rgb(238, 123, 4);
     color: white;
     font-size: .8rem;
     font-weight: bold;
@@ -92,4 +98,28 @@ footer {
 blockquote p {
     line-height: 1.5em;
     margin-bottom: 1em;
+}
+
+@media (min-width: 390px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+    nav ul li:nth-last-child(1){
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 600px) {
+    ul.testimonials {
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+        grid-gap: 1em;
+    }
+    ul.testimonials li {
+        margin: 0;
+    }
+    ul.testimonials li:nth-of-type(3) {
+        grid-column: 1/-1;
+    }
 }
