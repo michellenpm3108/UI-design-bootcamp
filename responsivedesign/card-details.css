@@ -56,30 +56,35 @@ a {
 
 @media (min-width: 500px) {
     .card {
-        
+        width: 70%;
+        margin: auto;
     }
     span {
-        
+        top: 4em;
+        width: 7em;
+        height: 7em;
     }
     .card-details {
-        
+        padding-left: 10em;        
     }
     a {
-        
+        margin-bottom: 1.2em;
+        width: 10em;
     }
     
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 900px) {
     .card-details {
-        
+        width: 70%;
     }
     
     h1 {
-        
+        font-size: 3rem;
+        margin-bottom: .2em;
     }
     p {
-        
+        letter-spacing: .2em;
     }
     a {
         
