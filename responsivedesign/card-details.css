@@ -56,38 +56,54 @@ a {
 
 @media (min-width: 500px) {
     .card {
-        width: 70%;
-        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-areas:
+        "avatar content";
+        margin: 0 4em;
+        gap: 1.2em;
+        padding-right: 2.4em;
+        padding-bottom: 2.5em;
     }
     span {
-        top: 4em;
-        width: 7em;
-        height: 7em;
+        grid-area: avatar;
+        position: initial;
+        display: block;
+        margin-left: -3.5em;
     }
     .card-details {
-        padding-left: 10em;        
+        grid-area: content;
     }
     a {
-        margin-bottom: 1.2em;
-        width: 10em;
+        display: inline-block;
     }
     
 }
 
 @media (min-width: 900px) {
     .card-details {
-        width: 70%;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-areas: 
+        "name details"
+        "btn details";
+        gap: 0 1.2em;
     }
     
     h1 {
-        font-size: 3rem;
-        margin-bottom: .2em;
+        grid-area: name;
+        margin-bottom: 0;
     }
     p {
-        letter-spacing: .2em;
+        grid-area: details;
+        margin-top: 2.6em;
     }
     a {
-        
+        grid-area: btn;
+        font-size: .5rem;
+        width: 60%;
+        margin: 1em auto 2.8em;
+        padding: .5em;
     }
     
 }
