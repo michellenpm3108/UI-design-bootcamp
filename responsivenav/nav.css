@@ -61,15 +61,48 @@ nav ul a {
     display: inline-block;
     color:rgb(51, 184, 51);
     text-decoration: none;
-    margin-bottom: 1em;
+    margin: .5em 0;
 }
-
-.active a {
+.active a{
     font-weight: bold;
-    padding: 0 0 .25em;
-    border-bottom: .2em solid rgb(51, 184, 51);
+
 }
 
+nav ul a:hover,
+nav ul a:focus {
+    padding: 0 0 .25em;
+    border-bottom: .1em solid rgb(51, 184, 51);
+}
+
+.submenu {
+    color: white;
+    font-size: .75rem;
+    padding: 0 2em;
+}
+.submenu p{
+    margin: .5em 0;
+    color:rgb(51, 184, 51);
+    font-weight: bold;
+    position: relative;
+}
+.submenu p::before {
+    content: '*';
+    font-size: 5rem;
+    position: absolute;
+    top: -.4em;
+    left: -.3em;
+    z-index: -1;
+    color: rgba(253, 178, 48, 0.443);
+}
+.submenu ul {
+    margin-top: .1em;
+    padding: 0;
+}
+.submenu ul li a {
+    margin: 0;
+    font-size: 1rem;
+    padding: .2em 0;
+}
 
 @media (min-width: 700px) {
     svg{
@@ -81,6 +114,7 @@ nav ul a {
         padding: 0;
         width: auto;
         height: auto;
+        opacity: 1;
     }
     nav ul{
         margin: 0;
