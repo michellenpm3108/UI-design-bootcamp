@@ -4,40 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A Responsive Navigation</title>
-    <link href="responsivenav/nav.css" rel="stylesheet">
+    <link href="nav.css" rel="stylesheet">
 </head>
 <body>
 
     <header>
-        <a href="#" class="logo">The company</a>
+        <a href="#" class="logo">Fruity Spring</a>
 
         
-        <svg class="open-btn" id="open-btn" enable-background="new 0 0 512 512" height="512" 
-        viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg">
-        <path d="m464.883 64.267h-417.766c-25.98 0-47.117 21.136-47.117 47.149 0 25.98 21.137 47.117 
-        47.117 47.117h417.766c25.98 0 47.117-21.137 47.117-47.117 0-26.013-21.137-47.149-47.117-47.149z"/>
-        <path d="m464.883 208.867h-417.766c-25.98 0-47.117 21.136-47.117 47.149 0 25.98 21.137 47.117 47.117
-        47.117h417.766c25.98 0 47.117-21.137 47.117-47.117 0-26.013-21.137-47.149-47.117-47.149z"/>
-        <path d="m464.883 353.467h-417.766c-25.98 0-47.117 21.137-47.117 47.149 0 25.98 21.137 47.117 47.117 47.117h417.766c25.98 
-        0 47.117-21.137 47.117-47.117 0-26.012-21.137-47.149-47.117-47.149z"/></svg>
+        <svg height="32px" class="open-btn" id="menu-btn" class="open" viewBox="0 0 32 32">
+            <path fill="rgb(51, 184, 51)" d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/>
+        </svg>
         
        
         <nav id="nav">
-            <svg version="1.1"  class="close-btn" id="close-btn" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-            viewBox="0 0 60.963 60.842" style="enable-background:new 0 0 60.963 60.842;" xml:space="preserve">
-            <path style="fill:#231F20;" d="M59.595,52.861L37.094,30.359L59.473,7.98c1.825-1.826,1.825-4.786,0-6.611
-            c-1.826-1.825-4.785-1.825-6.611,0L30.483,23.748L8.105,1.369c-1.826-1.825-4.785-1.825-6.611,0c-1.826,1.826-1.826,4.786,0,6.611
-            l22.378,22.379L1.369,52.861c-1.826,1.826-1.826,4.785,0,6.611c0.913,0.913,2.109,1.369,3.306,1.369s2.393-0.456,3.306-1.369
-            l22.502-22.502l22.501,22.502c0.913,0.913,2.109,1.369,3.306,1.369s2.393-0.456,3.306-1.369
-            C61.42,57.647,61.42,54.687,59.595,52.861z"/>
+            <svg viewBox="0 0 24 24" class="close-btn" id="exit-btn" class="exit">
+                <path id="exit" fill="rgb(51, 184, 51)" d="M14.8,12l3.6-3.6c0.8-0.8,0.8-2,0-2.8c-0.8-0.8-2-0.8-2.8,0L12,9.2L8.4,5.6c-0.8-0.8-2-0.8-2.8,0   c-0.8,0.8-0.8,2,0,2.8L9.2,12l-3.6,3.6c-0.8,0.8-0.8,2,0,2.8C6,18.8,6.5,19,7,19s1-0.2,1.4-0.6l3.6-3.6l3.6,3.6   C16,18.8,16.5,19,17,19s1-0.2,1.4-0.6c0.8-0.8,0.8-2,0-2.8L14.8,12z" />
             </svg>
 
             <ul class="nav-bar">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">About Us</a></li>
+                <li class="active"><a href="#">About</a></li>
+                <li><a href="#">Products</a></li>
                 <li><a href="#">FAQ</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Contact</a></li>
 
             </ul>
         </nav>
