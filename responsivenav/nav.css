@@ -35,6 +35,15 @@ nav {
     height: 100vh;
     width: 50%;
     visibility: hidden;
+    transform: translateX(50%);
+    opacity: 0;
+    transition: all .5s;
+}
+
+.open-nav {
+    visibility: unset;
+    transform: translateX(0);
+    opacity: 1;
 }
 
 .close-btn{
@@ -60,9 +69,7 @@ nav ul a {
     padding: 0 0 .25em;
     border-bottom: .2em solid rgb(51, 184, 51);
 }
-.open-nav {
-    visibility: unset;
-}
+
 
 @media (min-width: 700px) {
     svg{
