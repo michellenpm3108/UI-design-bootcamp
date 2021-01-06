@@ -23,6 +23,7 @@ header {
 
 .open-btn {
     width: 1.75em;
+    cursor: pointer;
 }
 
 nav {
@@ -33,12 +34,13 @@ nav {
     background:rgb(243, 233, 233);
     height: 100vh;
     width: 50%;
-    visibility: hiden;
+    visibility: hidden;
 }
 
 .close-btn{
     width: 1.75em;
     float: right;
+    cursor: pointer;
 }
 
 nav ul {
@@ -50,14 +52,16 @@ nav ul a {
     display: inline-block;
     color:rgb(51, 184, 51);
     text-decoration: none;
-    font-weight: bold;
     margin-bottom: 1em;
 }
 
 .active a {
-    font-weight: bolder;
+    font-weight: bold;
     padding: 0 0 .25em;
     border-bottom: .2em solid rgb(51, 184, 51);
+}
+.open-nav {
+    visibility: unset;
 }
 
 @media (min-width: 700px) {
