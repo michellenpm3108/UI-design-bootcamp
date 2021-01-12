@@ -104,7 +104,7 @@ nav ul a:focus {
     padding: .2em 0;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 500px) {
     svg{
        display: none;
     }
@@ -122,11 +122,13 @@ nav ul a:focus {
         display: flex;
         justify-content: space-between;
         align-content: center;
-
     }
 
     nav ul a{
         margin:0;
         padding-left: 1em; 
+    }
+    .submenu {
+
     }
 }
