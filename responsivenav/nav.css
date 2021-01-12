@@ -26,6 +26,7 @@ a.logo {
 }
 .open {
     margin: .5em;
+    cursor: pointer;
 }
 nav {
     position: fixed;  
@@ -35,6 +36,14 @@ nav {
     background:  #1D2226;
     width: 60%;
     visibility: hidden;
+    transform: translateX(50%);
+    opacity: 0;
+    transition: all .3s;
+}
+.open-nav {
+    visibility: visible;
+    transform: translateX(0);
+    opacity: 1;
 }
 
 .exit {
@@ -62,4 +71,31 @@ li a{
 li a:hover,
 li a:focus {
     background: #2E363D;
+}
+
+@media (min-width: 600px) {
+    .open, .exit {
+        display: none;
+    }
+    nav {
+        visibility: visible;
+        background: unset;
+        width: auto;
+        height: auto;
+        position: unset;
+        opacity: 1;
+        transform: translateX(0);
+    }
+    nav ul {
+        margin: 0;
+        display: flex;
+       
+    }
+    li a{
+        padding: 1em;
+        color: #ADDBFF;
+    }
+    .active a{
+        color: white;
+    }
 }
