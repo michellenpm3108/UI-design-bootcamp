@@ -1,134 +1,65 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap');
 
-body {
-    padding: 0;
+html, body {
     margin: 0;
-    font-family: 'Nunito', sans-serif;
+    padding: 0;
+}
+
+body {
+    font-family: 'Nunito';
+    height: 100vh;  
+    /* to let the side bar go all the way down */
 }
 
 header {
-    display: flex;
+    background: #3D5262;
+    display: flex; 
     justify-content: space-between;
-    align-items: baseline;
-    background: rgb(243, 233, 233);
-    padding: 1em;
+    overflow: hidden; //to prevent scroll bar when we play animation on the sidebar
 }
-.logo{
-    color:rgb(51, 184, 51);
+
+a.logo {
+    color: white;
     text-decoration: none;
     font-weight: bold;
-    font-family: 'Nunito';
-    font-size: 1.5rem;
+    margin: 1em .5em ;
 }
-
-.open-btn {
-    width: 1.75em;
-    cursor: pointer;
+.open {
+    margin: .5em;
 }
-
 nav {
-    position: fixed;
+    position: fixed;  
+    height: 100vh;
     top: 0;
     right: 0;
-    padding: 1em;
-    background:rgb(243, 233, 233);
-    height: 100vh;
-    width: 50%;
+    background:  #1D2226;
+    width: 60%;
     visibility: hidden;
-    transform: translateX(50%);
-    opacity: 0;
-    transition: all .5s;
 }
 
-.open-nav {
-    visibility: unset;
-    transform: translateX(0);
-    opacity: 1;
-}
-
-.close-btn{
-    width: 1.75em;
+.exit {
+    width: 2em;
     float: right;
+    margin: .5em;
     cursor: pointer;
 }
-
-nav ul {
-    list-style-type: none;
-    margin-top: 4em;
+ul {
+     list-style-type: none;
+     margin-top: 4em;
+     padding: 0
 }
-
-nav ul a {
-    display: inline-block;
-    color:rgb(51, 184, 51);
+li a{
+    color: #7B8994;
     text-decoration: none;
-    margin: .5em 0;
+    display: block;
+    padding: .5em 2em;
 }
-.active a{
+.active a  {
+    color: #008AF8;
     font-weight: bold;
-
 }
 
-nav ul a:hover,
-nav ul a:focus {
-    padding: 0 0 .25em;
-    border-bottom: .1em solid rgb(51, 184, 51);
-}
-
-.submenu {
-    color: white;
-    font-size: .75rem;
-    padding: 0 2em;
-}
-.submenu p{
-    margin: .5em 0;
-    color:rgb(51, 184, 51);
-    font-weight: bold;
-    position: relative;
-}
-.submenu p::before {
-    content: '*';
-    font-size: 5rem;
-    position: absolute;
-    top: -.4em;
-    left: -.3em;
-    z-index: -1;
-    color: rgba(253, 178, 48, 0.443);
-}
-.submenu ul {
-    margin-top: .1em;
-    padding: 0;
-}
-.submenu ul li a {
-    margin: 0;
-    font-size: 1rem;
-    padding: .2em 0;
-}
-
-@media (min-width: 500px) {
-    svg{
-       display: none;
-    }
-    nav {
-        visibility: unset;
-        position: unset;
-        padding: 0;
-        width: auto;
-        height: auto;
-        opacity: 1;
-    }
-    nav ul{
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: space-between;
-        align-content: center;
-    }
-
-    nav ul a{
-        margin:0;
-        padding-left: 1em; 
-    }
-    .submenu {
-
-    }
+li a:hover,
+li a:focus {
+    background: #2E363D;
 }

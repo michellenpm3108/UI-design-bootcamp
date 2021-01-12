@@ -8,3 +8,5 @@ menuBtn.addEventListener('click', function(){
 exitBtn.addEventListener('click', function(){
     nav.classList.remove('open-nav')
 })
+
+const subMenu = document.querySelector('.submenu')
