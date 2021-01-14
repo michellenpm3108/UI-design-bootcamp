@@ -142,7 +142,11 @@ li a:focus {
         left: 0;
         box-shadow: 10px 10px 5px rgb(233, 233, 233) ;
         background:  #1D2226;
-        width: 10em;
+        width: 15em;
+        display: none;
+    }
+    .sub:hover .submenu{ 
+        display: block;
     }
     .submenu ul {
         margin: 0;
