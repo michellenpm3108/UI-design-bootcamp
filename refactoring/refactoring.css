@@ -142,14 +142,14 @@ main {
 /* Your Fixes Below */
 body {
     padding: 1em;
-     background: #5a6b97;;
+     background: #293144;
 }
 /* navigation */
 nav {
     text-align: left;
     padding: 1em 0;
     width: 50%;
-    background: #282f42;
+    background: #333d55;
 }
 nav ul li a {
     text-decoration: none;
@@ -195,3 +195,24 @@ header a {
     text-transform: uppercase;
     letter-spacing: .2em;
 }
+ 
+/* main*/
+h1 {
+    text-transform: uppercase;
+}
+h3{ 
+    font-size: 1.5rem;
+    color: #FC85AE;
+}
+ul.data li p {
+    font-size: 1rem;
+}
+.left h3{
+    color: white;
+    text-transform: uppercase;
+}
+.panel {
+    padding: 1em;
+    margin-bottom: 1.5em;
+}
+
