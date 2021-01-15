@@ -200,7 +200,6 @@ a.cta-btn {
 /* main*/
 main {
     border: unset;
-    width: 80%;
     margin: auto;
     padding: 1em 0 2em;
 }
@@ -222,3 +221,27 @@ h3{
     margin-bottom: 2.5em;
 }
 
+/* Large Phones */
+
+@media (min-width: 500px) {
+    body {
+        text-align: left;
+        padding: 2em;
+    }
+    .data {
+         display: flex;
+        flex-wrap: wrap;
+     }
+    .data li{
+         flex: 50%;
+    }
+}
+
+@media (min-width: 600px) {
+    .panel li{
+        flex: 30%;
+   }
+   .panel ul li p{
+       margin-bottom: 0;
+   }
+}
