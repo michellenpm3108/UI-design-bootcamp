@@ -103,7 +103,6 @@ nav ul li a {
 
 h1 {
     color: white;
-    margin-top: 1em;
 }
 
 .panel {
@@ -191,9 +190,11 @@ header {
 header a {
     text-decoration: none;
 }
-.cta-btn {
+a.cta-btn {
     text-transform: uppercase;
     letter-spacing: .2em;
+    border-radius: .5em;
+    padding: .5em 1em;
 }
  
 /* main*/
@@ -201,23 +202,23 @@ main {
     border: unset;
     width: 80%;
     margin: auto;
+    padding: 1em 0 2em;
 }
 h1 {
     text-transform: uppercase;
 }
 h3{ 
-    font-size: 1.5rem;
+    font-size: unset;
     color: #FC85AE;
 }
-ul.data li p {
-    font-size: 1rem;
-}
+
 .left h3{
+    font-size: 1.5rem;
     color: white;
     text-transform: uppercase;
 }
 .panel {
     padding: 1em;
-    margin-bottom: 1.5em;
+    margin-bottom: 2.5em;
 }
 
