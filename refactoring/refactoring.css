@@ -267,6 +267,45 @@ ul.secondary {
 }
 }
 /* big screen solution 2 */
+@media (min-width: 900px) {
+    body {
+        padding: 0;
+        display: grid;
+        grid-template-areas: 
+        "nav header header header"
+        "nav main main main";
+        grid-template-columns: 200px auto;
+        grid-template-rows: 50px auto;
+    }
+    svg {
+        display: none;
+    }
+    nav {
+        visibility: unset;
+        position: unset;
+        height: unset;
+        grid-area: nav;
+        width: 100%;
+        padding: 0;
+    }
+    .inner-wrapper {
+        margin: 0;
+    }
+    header {
+        grid-area: header;
+        padding: 2.2em 1em;
+        margin: 0;
+    }
+    header .logo{
+        margin: 0;
+    }
+    main {
+        padding: 0 1em;
+
+        margin-top: 0;
+    }
+}
+
 
 
 
