@@ -180,7 +180,7 @@ nav ul li a:hover {
     padding: 1em 0;
 }
 nav svg{
-    width: 1.5em;
+    width: 1.2em;
 }
 
 /* header */
@@ -212,8 +212,7 @@ h3{
 }
 
 .left h3{
-    font-size: 1.5rem;
-    color: white;
+    font-size: 1.3rem;
     text-transform: uppercase;
 }
 .panel {
@@ -234,16 +233,36 @@ ul.data{
     justify-content: space-between;
 }
 ul.data li{
-    width: 50%
+    flex: 50%
 }
 }
 
 @media (min-width: 600px) {
 .panel ul.data li {
-    width: 33%;
+    flex: 33%;
 }
 .panel ul.data li p {
     margin-bottom: 0;
 }
+nav {
+    width: 40%;
+}
+}
 
+/* Tablet */
+
+@media (min-width: 720px) {
+.columns {
+    display: flex;
+    flex-wrap: wrap;
+}
+.col {
+    flex: 45%;
+}
+.left {
+    margin-right: 3em;
+}
+ul.secondary {
+    margin-top: 0;
+}
 }
