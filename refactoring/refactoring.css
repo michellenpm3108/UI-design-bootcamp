@@ -266,8 +266,16 @@ ul.secondary {
     margin-top: 0;
 }
 }
-/* big screen */
-@media (min-width: 900px) {
+/* big screen solution 2 */
+
+
+
+
+
+
+
+/* big screen solution 1*/
+/* @media (min-width: 900px) {
     header{
         position: relative;
     }
@@ -276,14 +284,15 @@ ul.secondary {
     }
     nav {
         visibility: unset;
+        opacity: 1;
         position: unset;
         height: unset;
         width: 30em;
         background: none;
         padding: 0;
         position: absolute;
-        left: 15em;
-        margin-top: .4em;
+        left: 25em;
+        margin-top: .5em;
     }
     
     svg,
@@ -294,9 +303,15 @@ ul.secondary {
         display: flex;
         justify-content: space-between;
     }
+
     nav ul li a {
         text-transform:initial;
         font-size: .8rem;
+    }
+
+    nav ul li a:hover {
+        background: none;
+        cursor: pointer;
     }
     main {
         display: flex;
@@ -309,4 +324,4 @@ ul.secondary {
     .panel {
         flex: 50%;
     }
-}
+} */
