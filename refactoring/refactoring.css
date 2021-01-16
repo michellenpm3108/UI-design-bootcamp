@@ -224,24 +224,26 @@ h3{
 /* Large Phones */
 
 @media (min-width: 500px) {
-    body {
-        text-align: left;
-        padding: 2em;
-    }
-    .data {
-         display: flex;
-        flex-wrap: wrap;
-     }
-    .data li{
-         flex: 50%;
-    }
+body {
+    text-align: left;
+    padding: 2em;
+}
+ul.data{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+ul.data li{
+    width: 50%
+}
 }
 
 @media (min-width: 600px) {
-    .panel li{
-        flex: 30%;
-   }
-   .panel ul li p{
-       margin-bottom: 0;
-   }
+.panel ul.data li {
+    width: 33%;
+}
+.panel ul.data li p {
+    margin-bottom: 0;
+}
+
 }
